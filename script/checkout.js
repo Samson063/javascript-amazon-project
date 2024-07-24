@@ -2,7 +2,7 @@ import { cart } from "../data/cart";
 import { products } from "../data/products";
 
 cart.forEach((cartItem) => {
-    const productId = cart.productId;
+    const productId = cartItem.productId;
 
     let matchingProduct;
 
@@ -43,3 +43,5 @@ cart.forEach((cartItem) => {
 
   `
 })
+
+console.log(matchingProduct);
